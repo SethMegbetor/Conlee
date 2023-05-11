@@ -218,7 +218,7 @@ body {
 
 a.main-button-slider {
   font-size: 13px;
-  border-radius: 20px;
+  border-radius: 8px;
   padding: 12px 20px;
   background-color: #f55858;
   text-transform: uppercase;
@@ -746,9 +746,16 @@ TRY IT ... with or without CENTER CENTER
 }
 
 .welcome-area .header-text h1 {
-  font-weight: 400;
+  /* font-weight: 400;
   font-size: 64px;
   line-height: 80px;
+  letter-spacing: 1.4px;
+  margin-bottom: 30px;
+  color: #fff; */
+
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 72px;
   letter-spacing: 1.4px;
   margin-bottom: 30px;
   color: #fff;
@@ -794,6 +801,8 @@ TRY IT ... with or without CENTER CENTER
     line-height: 50px;
     margin-bottom: 15px;
   }
+
+
   .welcome-area .header-text p {
     margin-bottom: 30px;
   }
