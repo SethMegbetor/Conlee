@@ -220,7 +220,8 @@ a.main-button-slider {
   font-size: 13px;
   border-radius: 8px;
   padding: 12px 20px;
-  background-color: #f55858;
+  /* background-color: #f55858; */
+  background-color: #00b4c6;
   text-transform: uppercase;
   color: #fff;
   letter-spacing: 0.25px;
@@ -723,7 +724,7 @@ welcome
   justify-content: center;
   background-image: url(../images/banner-bg.png);
   background-repeat: no-repeat;
-/*
+  /*
 TRY IT ... with or without CENTER CENTER
   background-position: center center; 
 */
@@ -762,7 +763,7 @@ TRY IT ... with or without CENTER CENTER
 }
 
 .welcome-area .header-text p {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 17px;
   color: #fff;
   line-height: 30px;
@@ -786,6 +787,7 @@ TRY IT ... with or without CENTER CENTER
     color: #fff;
   }
   .welcome-area .header-text p {
+    font-weight: 400;
     color: #fff;
     margin-bottom: 30px;
   }
@@ -802,8 +804,8 @@ TRY IT ... with or without CENTER CENTER
     margin-bottom: 15px;
   }
 
-
   .welcome-area .header-text p {
+    font-weight: 400;
     margin-bottom: 30px;
   }
 }
@@ -830,6 +832,7 @@ TRY IT ... with or without CENTER CENTER
     color: #fff;
   }
   .welcome-area .header-text p {
+    font-weight: 400;
     text-align: center;
     color: #fff;
     font-size: 14px;
