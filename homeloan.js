@@ -28,9 +28,9 @@ function calculateResults(e) {
   // Check if value is finite
 
   if (isFinite(monthly)) {
-    monthlyPayment = monthly.toFixed(4);
-    totalPayment = (monthly * calculatedPayment).toFixed(4);
-    totalInterest = (monthly * calculatedPayment - principal).toFixed(4);
+    monthlyPayment.value = monthly.toFixed(4);
+    totalPayment.value = (monthly * calculatedPayment).toFixed(4);
+    totalInterest.value = (monthly * calculatedPayment - principal).toFixed(4);
   } else {
     showError("Please check your numbers");
   }
