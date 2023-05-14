@@ -26,7 +26,7 @@ function calculateResults(e) {
   const monthly = (principal * x * calculatedInterest) / (x - 1);
 
   // Check if value is finite
-
+// check this part of the code
   if (isFinite(monthly)) {
     monthlyPayment.value = monthly.toFixed(4);
     totalPayment.value = (monthly * calculatedPayment).toFixed(4);
