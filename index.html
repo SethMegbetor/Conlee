@@ -43,6 +43,63 @@ https://templatemo.com/tm-537-art-factory
     />
     <link rel="stylesheet" type="text/css" href="assets/css/owl-carousel.css" />
     <link rel="stylesheet" href="./assets/css/custom.css" />
+    <!-- <style>
+      .slider {
+        width: 700px;
+        height: 550px;
+        overflow: hidden;
+        position: relative;
+      }
+
+      .slides {
+        display: flex;
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .slide {
+        width: 700px;
+        height: 550px;
+        flex-shrink: 0;
+      }
+
+      .slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style> -->
+    <style>
+      .slider {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        overflow: hidden;
+        position: relative;
+        margin: 0 auto;
+      }
+
+      .slides {
+        display: flex;
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .slide {
+        width: 100%;
+        flex-shrink: 0;
+      }
+
+      .slide img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+
+      @media (max-width: 768px) {
+        .slider {
+          max-width: 90%;
+        }
+      }
+    </style>
   </head>
 
   <body>
@@ -120,6 +177,7 @@ https://templatemo.com/tm-537-art-factory
             >
               <h1>Own Your Dream Home Today</h1>
               <p>
+                Unlock the Door to Affordable Homeownership with FLISP! <br />
                 Get Up to R121,626 Off a new home in ORANGE FARM with the FLISP
                 government subsidy
               </p>
@@ -143,11 +201,40 @@ https://templatemo.com/tm-537-art-factory
               class="col-lg-6 col-md-6 col-sm-12 col-xs-12"
               data-scroll-reveal="enter right move 30px over 0.6s after 0.4s"
             >
-              <img
+              <!-- <img
                 src="assets/images/showcase 3.jpg"
                 class="rounded img-fluid d-block mx-auto"
                 alt="First Vector Graphic"
-              />
+              /> -->
+              <!-- <div class="slider">
+                <div class="slides">
+                  <div class="slide">
+                    <img src="assets/images/6.png" alt="Image 1" />
+                  </div>
+                  <div class="slide">
+                    <img src="assets/images/8.png" alt="Image 2" />
+                  </div>
+                  <div class="slide">
+                    <img src="assets/images/9.png" alt="Image 3" />
+                  </div>
+                </div>
+              </div> -->
+              <div class="slider">
+                <div class="slides">
+                  <div class="slide">
+                    <img src="assets/images/6.png" alt="Image 1" />
+                  </div>
+                  <div class="slide">
+                    <img src="assets/images/8.png" alt="Image 2" />
+                  </div>
+                  <div class="slide">
+                    <img src="assets/images/9.png" alt="Image 3" />
+                  </div>
+                  <div class="slide">
+                    <img src="assets/images/11.png" alt="Image 4" />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -661,5 +748,23 @@ https://templatemo.com/tm-537-art-factory
 
     <!-- Global Init -->
     <script src="assets/js/custom.js"></script>
+    <script>
+      // JavaScript for image slider functionality
+      const slider = document.querySelector(".slider");
+      const slides = slider.querySelector(".slides");
+      const slideWidth = slider.offsetWidth;
+      const slideCount = slides.children.length;
+      let slideIndex = 0;
+
+      function slideNext() {
+        slideIndex++;
+        if (slideIndex >= slideCount) {
+          slideIndex = 0;
+        }
+        slides.style.transform = `translateX(-${slideWidth * slideIndex}px)`;
+      }
+
+      setInterval(slideNext, 3000); // Change slide every 3 seconds
+    </script>
   </body>
 </html>
