@@ -736,7 +736,7 @@ TRY IT ... with or without CENTER CENTER
 
 .welcome-area .header-text {
   position: absolute;
-  top: 60%;
+  top: 50%;
   transform: translateY(-60%);
   text-align: left;
   width: 100%;
